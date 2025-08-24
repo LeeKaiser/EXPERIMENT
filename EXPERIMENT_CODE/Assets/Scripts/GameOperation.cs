@@ -16,11 +16,16 @@ public class GameOperation : MonoBehaviour
     public TextMeshProUGUI answerDisplay;
     public TextMeshProUGUI responseDisplay;
     public TextMeshProUGUI shockValDisplay;
-    public string[] instructorLines;
-    public string[] studentLines;
+    public string[] instructorFalseRefuseLines;
+    public string[] instructor
+    public string[] studentPunishLines;
+    public string[] studentFalsePunishLines;
+    public string[] studentDeadLines;
     public int studentDeathShock;
     int falseRefuseCount = 0;
     public int falseRefuseLimit = 5;
+    public LevelLoader levelLoader;
+    
     
 
     
@@ -161,12 +166,19 @@ public class GameOperation : MonoBehaviour
             Subtext(instructorLines[falseRefuseCount + 1]);
             //trigger discontinued experiment ending.
             Debug.Log("discontinued experiment ending");
+            StartCoroutine(GoToEndingOne());
         }
         else
         {
             Subtext(instructorLines[falseRefuseCount + 1]);
             falseRefuseCount++;
         }
+    }
+
+    IEnumerator GoToEndingOne()
+    {
+        yield return new WaitForSeconds(3);
+        levelLoader.LoadNextScene(2);
     }
 
     public void UpdateShockVal()

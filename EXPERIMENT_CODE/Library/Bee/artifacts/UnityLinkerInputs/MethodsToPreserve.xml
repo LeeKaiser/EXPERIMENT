@@ -6,6 +6,8 @@
 		</type>
 		<type fullname="LevelLoader">
 			<method name="LoadNextScene"/>
+			<method name="LoadNextScene"/>
+			<method name="QuitGame"/>
 		</type>
 	</assembly>
 </linker>

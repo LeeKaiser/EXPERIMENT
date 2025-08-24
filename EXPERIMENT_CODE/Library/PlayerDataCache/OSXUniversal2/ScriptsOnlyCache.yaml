@@ -69,7 +69,68 @@ ScriptsOnlyBuild:
   - assembly: Assembly-CSharp
     fullTypeName: GameOperation
     methodName: Punish
+  - assembly: Assembly-CSharp
+    fullTypeName: LevelLoader
+    methodName: QuitGame
+  - assembly: Assembly-CSharp
+    fullTypeName: LevelLoader
+    methodName: LoadNextScene
   sceneClasses:
+    Assets/Scenes/Ending1.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 89
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 108
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 8602}
+    - Class: 114
+      Script: {instanceID: 8846}
+    - Class: 114
+      Script: {instanceID: 9954}
+    - Class: 114
+      Script: {instanceID: 10404}
+    - Class: 114
+      Script: {instanceID: 10604}
+    - Class: 114
+      Script: {instanceID: 10828}
+    - Class: 114
+      Script: {instanceID: 11230}
+    - Class: 114
+      Script: {instanceID: 13112}
+    - Class: 114
+      Script: {instanceID: 13960}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
     Assets/Scenes/Introduction.unity:
     - Class: 1
       Script: {instanceID: 0}
@@ -94,29 +155,29 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 8596}
+      Script: {instanceID: 8602}
     - Class: 114
-      Script: {instanceID: 8840}
+      Script: {instanceID: 8846}
     - Class: 114
-      Script: {instanceID: 9308}
+      Script: {instanceID: 9314}
     - Class: 114
-      Script: {instanceID: 9948}
+      Script: {instanceID: 9954}
     - Class: 114
-      Script: {instanceID: 10398}
+      Script: {instanceID: 10404}
     - Class: 114
-      Script: {instanceID: 10598}
+      Script: {instanceID: 10604}
     - Class: 114
-      Script: {instanceID: 10822}
+      Script: {instanceID: 10828}
     - Class: 114
-      Script: {instanceID: 12866}
+      Script: {instanceID: 11230}
     - Class: 114
-      Script: {instanceID: 13104}
+      Script: {instanceID: 12874}
     - Class: 114
-      Script: {instanceID: 13894}
+      Script: {instanceID: 13112}
     - Class: 114
-      Script: {instanceID: 13952}
+      Script: {instanceID: 13902}
     - Class: 114
-      Script: {instanceID: 32650}
+      Script: {instanceID: 13960}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -163,23 +224,25 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 8596}
+      Script: {instanceID: 8602}
     - Class: 114
-      Script: {instanceID: 8840}
+      Script: {instanceID: 8846}
     - Class: 114
-      Script: {instanceID: 9466}
+      Script: {instanceID: 9472}
     - Class: 114
-      Script: {instanceID: 9948}
+      Script: {instanceID: 9954}
     - Class: 114
-      Script: {instanceID: 10398}
+      Script: {instanceID: 10404}
     - Class: 114
-      Script: {instanceID: 10598}
+      Script: {instanceID: 10604}
     - Class: 114
-      Script: {instanceID: 10822}
+      Script: {instanceID: 10828}
     - Class: 114
-      Script: {instanceID: 13104}
+      Script: {instanceID: 11230}
     - Class: 114
-      Script: {instanceID: 13952}
+      Script: {instanceID: 13112}
+    - Class: 114
+      Script: {instanceID: 13960}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -325,7 +388,7 @@ ScriptsOnlyBuild:
     className: GroupTrack
   - hash:
       serializedVersion: 2
-      Hash: c4f754a811070de9388d31e92abd015b
+      Hash: a7a883f9072da2fd717db08c651d1724
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: GameOperation
@@ -533,6 +596,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro
     namespaceName: TMPro
     className: TMP_SelectionCaret
+  - hash:
+      serializedVersion: 2
+      Hash: 807b41821f1f6530027096d8b441ee82
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: LevelLoader
   - hash:
       serializedVersion: 2
       Hash: d41ab9b5ea92474f9c0a6937a0607ce1
@@ -1007,14 +1076,9 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
-  - hash:
-      serializedVersion: 2
-      Hash: 807b41821f1f6530027096d8b441ee82
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: LevelLoader
   platform: 2
   scenePathNames:
   - Assets/Scenes/Introduction.unity
   - Assets/Scenes/MainGamePlay.unity
-  playerPath: /Users/kaiserlee/Desktop/EXPERIMENT/EXPERIMENT_CODE/EXPERIMENT_ALPHA_1.1.app
+  - Assets/Scenes/Ending1.unity
+  playerPath: /Users/kaiserlee/Desktop/EXPERIMENT/EXPERIMENT_CODE/EXPERIMENT_ALPHA_1.2.app
