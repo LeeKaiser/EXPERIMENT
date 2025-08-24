@@ -4,5 +4,8 @@
 			<method name="Punish"/>
 			<method name="Refuse"/>
 		</type>
+		<type fullname="LevelLoader">
+			<method name="LoadNextScene"/>
+		</type>
 	</assembly>
 </linker>

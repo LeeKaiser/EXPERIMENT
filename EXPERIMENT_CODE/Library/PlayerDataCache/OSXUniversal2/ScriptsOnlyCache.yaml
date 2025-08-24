@@ -2,6 +2,7 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
     - GameOperation
+    - LevelLoader
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
     Unity.TextMeshPro:
@@ -60,13 +61,79 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.SpriteState
   methodsToPreserve:
   - assembly: Assembly-CSharp
+    fullTypeName: LevelLoader
+    methodName: LoadNextScene
+  - assembly: Assembly-CSharp
     fullTypeName: GameOperation
     methodName: Refuse
   - assembly: Assembly-CSharp
     fullTypeName: GameOperation
     methodName: Punish
   sceneClasses:
-    Assets/Scenes/SampleScene.unity:
+    Assets/Scenes/Introduction.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 49
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 89
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 108
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 8596}
+    - Class: 114
+      Script: {instanceID: 8840}
+    - Class: 114
+      Script: {instanceID: 9308}
+    - Class: 114
+      Script: {instanceID: 9948}
+    - Class: 114
+      Script: {instanceID: 10398}
+    - Class: 114
+      Script: {instanceID: 10598}
+    - Class: 114
+      Script: {instanceID: 10822}
+    - Class: 114
+      Script: {instanceID: 12866}
+    - Class: 114
+      Script: {instanceID: 13104}
+    - Class: 114
+      Script: {instanceID: 13894}
+    - Class: 114
+      Script: {instanceID: 13952}
+    - Class: 114
+      Script: {instanceID: 32650}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    Assets/Scenes/MainGamePlay.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -85,8 +152,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 48
       Script: {instanceID: 0}
-    - Class: 49
-      Script: {instanceID: 0}
     - Class: 65
       Script: {instanceID: 0}
     - Class: 81
@@ -98,29 +163,23 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 8704}
+      Script: {instanceID: 8596}
     - Class: 114
-      Script: {instanceID: 8952}
+      Script: {instanceID: 8840}
     - Class: 114
-      Script: {instanceID: 9426}
+      Script: {instanceID: 9466}
     - Class: 114
-      Script: {instanceID: 9586}
+      Script: {instanceID: 9948}
     - Class: 114
-      Script: {instanceID: 10072}
+      Script: {instanceID: 10398}
     - Class: 114
-      Script: {instanceID: 10528}
+      Script: {instanceID: 10598}
     - Class: 114
-      Script: {instanceID: 10728}
+      Script: {instanceID: 10822}
     - Class: 114
-      Script: {instanceID: 10952}
+      Script: {instanceID: 13104}
     - Class: 114
-      Script: {instanceID: 13010}
-    - Class: 114
-      Script: {instanceID: 13252}
-    - Class: 114
-      Script: {instanceID: 14050}
-    - Class: 114
-      Script: {instanceID: 14110}
+      Script: {instanceID: 13952}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -948,7 +1007,14 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 807b41821f1f6530027096d8b441ee82
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: LevelLoader
   platform: 2
   scenePathNames:
-  - Assets/Scenes/SampleScene.unity
-  playerPath: /Users/kaiserlee/Desktop/EXPERIMENT/EXPERIMENT_CODE/EXPERIMENT_PROTOTYPE_1.0.app
+  - Assets/Scenes/Introduction.unity
+  - Assets/Scenes/MainGamePlay.unity
+  playerPath: /Users/kaiserlee/Desktop/EXPERIMENT/EXPERIMENT_CODE/EXPERIMENT_ALPHA_1.1.app
