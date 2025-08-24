@@ -3,20 +3,26 @@
     {
       "type": "playerBuildTimingData",
       "msg": {
-        "build_event_id": "d757a87e91b814d0db6ae1f787b6d54d",
-        "build_player": 1763,
-        "preprocess_player": 12,
-        "produce_player_script_assemblies": 627,
-        "build_scripts_dlls": 9,
-        "postprocess_built_player": 1031,
-        "node_summary_table": []
+        "build_event_id": "83b308c09d171413f9744f0eda8b884e",
+        "build_player": 3602,
+        "preprocess_player": 10,
+        "produce_player_script_assemblies": 563,
+        "build_scripts_dlls": 6,
+        "writing_asset_files": 44,
+        "postprocess_built_player": 981,
+        "node_summary_table": [
+          {
+            "name": "Csc",
+            "duration": 100
+          }
+        ]
       },
       "version": 1
     },
     {
       "type": "unityLinkerData",
       "msg": {
-        "build_event_id": "d757a87e91b814d0db6ae1f787b6d54d",
+        "build_event_id": "83b308c09d171413f9744f0eda8b884e",
         "node_executed": false,
         "option_rule_set": "Copy"
       },
