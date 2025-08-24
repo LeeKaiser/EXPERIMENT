@@ -9,4 +9,4 @@ If the student responds with the incorrect answer, punish them with a controlled
 
 
 
-clone this repository and run EXPERIMENT_PROTOTYPE_1.0 file
+clone this repository and run EXPERIMENT_ALPHA_1.1 file. Currently only available in mac
