@@ -322,6 +322,7 @@
 -analyzer:"/Applications/Unity/Hub/Editor/6000.1.4f1/Unity.app/Contents/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 -analyzer:"/Applications/Unity/Hub/Editor/6000.1.4f1/Unity.app/Contents/Tools/Unity.SourceGenerators/Unity.UIToolkit.SourceGenerator.dll"
 "Assets/Scripts/GameOperation.cs"
+"Assets/Scripts/LevelLoader.cs"
 -langversion:9.0
 /deterministic
 /optimize+
