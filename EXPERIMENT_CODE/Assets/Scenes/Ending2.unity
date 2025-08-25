@@ -696,10 +696,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'You have reached ending 1
+  m_text: 'You have reached ending 2
 
 
-    The experiment ended due to your protest
+    The experiment proceeded as expected
 
 
     The

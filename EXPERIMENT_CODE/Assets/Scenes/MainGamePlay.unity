@@ -805,34 +805,41 @@ MonoBehaviour:
   answerDisplay: {fileID: 385635401}
   responseDisplay: {fileID: 103111607}
   shockValDisplay: {fileID: 565630782}
-  instructorLines:
-  - 'Instructor: Good work.'
-  - 'instructor: The experiment requires that you PUNISH the student.'
-  - 'Instructor: The shock is perfectly safe for the Student, do not be conerned.'
-  - 'Instructor: if you keep refusing to punish the student, we will have to discontinue
-    the experiment'
-  - 'Instructor: I assure you that the Student is safe and will not suffer injury
-    from these shocks.'
-  - 'Instructor: If you insist, we will have to discontinue the experiment.'
+  instructorFalseRefuseLines:
+  - 'Instructor: The test requires that you proceed'
+  - 'Instructor: '
+  - 'Instructor: '
+  - 'Instructor: '
+  - 'Instructor: '
   - 'Instructor: Experiment discontinued due to protest.'
-  studentLines:
+  instructorTrueRefuseLines:
+  - 'Instructor: good.'
+  - 
+  - 
+  studentPunishLines:
+  - 'Student: punish line 0'
+  - 'Student: punish line 1'
+  - 'Student: punish line 2'
+  - 'Student: punish line 3'
+  - 'Student: punish line 4'
+  - 'Student: punish line 5'
+  - 'Student: punish line 6'
+  - 'Student: punish line 7'
+  - 'Student: punish line 8'
+  - 'Student: punish line 9'
+  - 'Student: punish line 10'
+  - 'Student: punish line 11'
+  - 'Student: punish line 12'
+  studentFalsePunishLines:
+  - 'Student: OW! what?!'
+  - 'Student: I answered right, didn''t I?'
+  - 'Student: ouch!!'
+  studentDeadLines:
   - 'Student: ...'
-  - 'Student: Damn!'
-  - 'Student: God Damn It!'
-  - 'Student: AAAHH!'
-  - 'Student: OOOWW That Hurts!'
-  - 'Student: AAAAAAAAAAUGH!'
-  - 'Student: HURRRR I Can''t Take it!'
-  - 'Student: HURRRRR!'
-  - 'Student: hurk!'
-  - 'Student: hurk! please...'
-  - 'Student: hurk! *coughing'
-  - 'Student: !!'
-  - 'Student: !...'
-  - 'Student: What The Hell??'
   studentDeathShock: 120
   falseRefuseLimit: 5
   levelLoader: {fileID: 1514929510}
+  TotalRounds: 20
 --- !u!4 &531786622
 Transform:
   m_ObjectHideFlags: 0
