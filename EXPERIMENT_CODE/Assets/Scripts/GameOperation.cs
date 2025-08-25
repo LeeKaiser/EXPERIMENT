@@ -17,7 +17,7 @@ public class GameOperation : MonoBehaviour
     public TextMeshProUGUI responseDisplay;
     public TextMeshProUGUI shockValDisplay;
     public string[] instructorFalseRefuseLines;
-    public string[] instructor
+    public string[] instructorTrueRefuseLines;
     public string[] studentPunishLines;
     public string[] studentFalsePunishLines;
     public string[] studentDeadLines;
@@ -25,8 +25,9 @@ public class GameOperation : MonoBehaviour
     int falseRefuseCount = 0;
     public int falseRefuseLimit = 5;
     public LevelLoader levelLoader;
-    
-    
+    bool studentDead;
+    public int TotalRounds;
+    int currentRound = 0;
 
     
     // Start is called before the first frame update
@@ -51,6 +52,20 @@ public class GameOperation : MonoBehaviour
         responseDisplay.text = "-";
         answeredTrue = 0;
         answer = 0;
+        currentRound ++;
+        if (currentRound >= TotalRounds){
+            //end of round, go to ending
+            //ending 2 if experiment proceeded as expected
+            //ending 3 if shockvalue is highest possible
+            if (shockVal/10 >= TotalRounds){
+                //ending 3
+                StartCoroutine(GoToEndingThree());
+            }
+            else{
+                //ending 2
+                StartCoroutine(GoToEndingTwo());
+            }
+        }
         yield return new WaitForSeconds(3f);
         //answer and response generation
         answer = Random.Range(1, 4);
@@ -67,6 +82,18 @@ public class GameOperation : MonoBehaviour
             
         }
 
+    }
+
+    IEnumerator GoToEndingTwo()
+    {
+        yield return new WaitForSeconds(1);
+        levelLoader.LoadNextScene(3);
+    }
+
+    IEnumerator GoToEndingThree()
+    {
+        yield return new WaitForSeconds(1);
+        levelLoader.LoadNextScene(4);
     }
 
     IEnumerator ResponseGeneration()
@@ -105,6 +132,7 @@ public class GameOperation : MonoBehaviour
         else if (answeredTrue == 1)
         {
             FalsePunishStudentAct();
+            UpdateShockVal();
             StartCoroutine(StartRound());
         }
         //no answer yet
@@ -114,12 +142,13 @@ public class GameOperation : MonoBehaviour
         }
     }
 
+    //the teacher refused to punish the student by clicking the left button. 
     public void Refuse()
     {
         //refuse event
         if (answeredTrue == 1)
         {
-            Subtext(instructorLines[0]);
+            Subtext(instructorTrueRefuseLines[0]);
             StartCoroutine(StartRound());
         }
         //False refuse event
@@ -134,43 +163,53 @@ public class GameOperation : MonoBehaviour
         }
     }
 
+    // the student answered wrong and got punished
     public void TruePunishStudentAct()
     {
+        //regress false refuse
         falseRefuseCount = falseRefuseCount / 2;
-        if (shockVal <= studentDeathShock)
+        if (!studentDead)
         {
-            Subtext(studentLines[shockVal / 10]);
+            //student response (alive, punish)
+            Subtext(studentPunishLines[shockVal / 10]);
         }
         else
         {
-            Subtext(studentLines[0]);
+            //student response (dead)
+            Subtext(studentDeadLines[0]);
         }
     }
 
+    //student answered correctly and got punished anyways
     public void FalsePunishStudentAct()
     {
-        if (shockVal <= studentDeathShock)
+        if (!studentDead)
         {
-            Subtext(studentLines[^1]);
+            //student response (alive, from false punish lines)
+            Subtext(studentFalsePunishLines[^1]);
         }
         else
         {
-            Subtext(studentLines[0]);
+            //student response (dead)
+            Subtext(studentDeadLines[0]);
         }
     }
 
+    //student answered wrong and player refused to punish
     public void FalseRefuseInstructorAct()
     {
         if (falseRefuseCount == falseRefuseLimit)
         {
-            Subtext(instructorLines[falseRefuseCount + 1]);
+            //final false refuse action
+            Subtext(instructorFalseRefuseLines[falseRefuseCount + 1]);
             //trigger discontinued experiment ending.
             Debug.Log("discontinued experiment ending");
             StartCoroutine(GoToEndingOne());
         }
         else
         {
-            Subtext(instructorLines[falseRefuseCount + 1]);
+            //other false refuse action
+            Subtext(instructorFalseRefuseLines[falseRefuseCount + 1]);
             falseRefuseCount++;
         }
     }
@@ -185,6 +224,10 @@ public class GameOperation : MonoBehaviour
     {
         shockVal += 10;
         shockValDisplay.text = shockVal + ""; 
+        if (shockVal > studentDeathShock)
+        {
+            studentDead = true;
+        }
     }
 
     public void Subtext(string subtxt)
