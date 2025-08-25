@@ -22,6 +22,8 @@
             "moduleName": "Core",
             "usedInScenes": [
                 "Assets/Scenes/Ending1.unity",
+                "Assets/Scenes/Ending2.unity",
+                "Assets/Scenes/Ending3.unity",
                 "Assets/Scenes/Introduction.unity",
                 "Assets/Scenes/MainGamePlay.unity"
             ]
@@ -33,6 +35,8 @@
             "moduleName": "Core",
             "usedInScenes": [
                 "Assets/Scenes/Ending1.unity",
+                "Assets/Scenes/Ending2.unity",
+                "Assets/Scenes/Ending3.unity",
                 "Assets/Scenes/Introduction.unity",
                 "Assets/Scenes/MainGamePlay.unity"
             ]
@@ -58,6 +62,8 @@
             "moduleName": "Core",
             "usedInScenes": [
                 "Assets/Scenes/Ending1.unity",
+                "Assets/Scenes/Ending2.unity",
+                "Assets/Scenes/Ending3.unity",
                 "Assets/Scenes/Introduction.unity",
                 "Assets/Scenes/MainGamePlay.unity"
             ]
@@ -83,6 +89,8 @@
             "moduleName": "Core",
             "usedInScenes": [
                 "Assets/Scenes/Ending1.unity",
+                "Assets/Scenes/Ending2.unity",
+                "Assets/Scenes/Ending3.unity",
                 "Assets/Scenes/Introduction.unity",
                 "Assets/Scenes/MainGamePlay.unity"
             ]
@@ -101,6 +109,8 @@
             "moduleName": "AI",
             "usedInScenes": [
                 "Assets/Scenes/Ending1.unity",
+                "Assets/Scenes/Ending2.unity",
+                "Assets/Scenes/Ending3.unity",
                 "Assets/Scenes/Introduction.unity",
                 "Assets/Scenes/MainGamePlay.unity"
             ]
@@ -203,6 +213,8 @@
             "moduleName": "Core",
             "usedInScenes": [
                 "Assets/Scenes/Ending1.unity",
+                "Assets/Scenes/Ending2.unity",
+                "Assets/Scenes/Ending3.unity",
                 "Assets/Scenes/Introduction.unity",
                 "Assets/Scenes/MainGamePlay.unity"
             ]
@@ -249,6 +261,8 @@
             "moduleName": "Audio",
             "usedInScenes": [
                 "Assets/Scenes/Ending1.unity",
+                "Assets/Scenes/Ending2.unity",
+                "Assets/Scenes/Ending3.unity",
                 "Assets/Scenes/Introduction.unity",
                 "Assets/Scenes/MainGamePlay.unity"
             ]
@@ -260,6 +274,8 @@
             "moduleName": "Audio",
             "usedInScenes": [
                 "Assets/Scenes/Ending1.unity",
+                "Assets/Scenes/Ending2.unity",
+                "Assets/Scenes/Ending3.unity",
                 "Assets/Scenes/Introduction.unity",
                 "Assets/Scenes/MainGamePlay.unity"
             ]
@@ -271,6 +287,8 @@
             "moduleName": "Core",
             "usedInScenes": [
                 "Assets/Scenes/Ending1.unity",
+                "Assets/Scenes/Ending2.unity",
+                "Assets/Scenes/Ending3.unity",
                 "Assets/Scenes/Introduction.unity",
                 "Assets/Scenes/MainGamePlay.unity"
             ]
@@ -291,6 +309,8 @@
             "moduleName": "Core",
             "usedInScenes": [
                 "Assets/Scenes/Ending1.unity",
+                "Assets/Scenes/Ending2.unity",
+                "Assets/Scenes/Ending3.unity",
                 "Assets/Scenes/Introduction.unity",
                 "Assets/Scenes/MainGamePlay.unity"
             ]
@@ -302,6 +322,8 @@
             "moduleName": "UI",
             "usedInScenes": [
                 "Assets/Scenes/Ending1.unity",
+                "Assets/Scenes/Ending2.unity",
+                "Assets/Scenes/Ending3.unity",
                 "Assets/Scenes/Introduction.unity",
                 "Assets/Scenes/MainGamePlay.unity"
             ]
@@ -313,6 +335,8 @@
             "moduleName": "UI",
             "usedInScenes": [
                 "Assets/Scenes/Ending1.unity",
+                "Assets/Scenes/Ending2.unity",
+                "Assets/Scenes/Ending3.unity",
                 "Assets/Scenes/Introduction.unity",
                 "Assets/Scenes/MainGamePlay.unity"
             ]
@@ -333,6 +357,8 @@
             "moduleName": "Core",
             "usedInScenes": [
                 "Assets/Scenes/Ending1.unity",
+                "Assets/Scenes/Ending2.unity",
+                "Assets/Scenes/Ending3.unity",
                 "Assets/Scenes/Introduction.unity",
                 "Assets/Scenes/MainGamePlay.unity"
             ]
@@ -344,6 +370,8 @@
             "moduleName": "Core",
             "usedInScenes": [
                 "Assets/Scenes/Ending1.unity",
+                "Assets/Scenes/Ending2.unity",
+                "Assets/Scenes/Ending3.unity",
                 "Assets/Scenes/Introduction.unity",
                 "Assets/Scenes/MainGamePlay.unity"
             ]
@@ -369,6 +397,8 @@
             "moduleName": "TextRendering",
             "usedInScenes": [
                 "Assets/Scenes/Ending1.unity",
+                "Assets/Scenes/Ending2.unity",
+                "Assets/Scenes/Ending3.unity",
                 "Assets/Scenes/Introduction.unity",
                 "Assets/Scenes/MainGamePlay.unity"
             ]
@@ -380,6 +410,8 @@
             "moduleName": "Core",
             "usedInScenes": [
                 "Assets/Scenes/Ending1.unity",
+                "Assets/Scenes/Ending2.unity",
+                "Assets/Scenes/Ending3.unity",
                 "Assets/Scenes/Introduction.unity",
                 "Assets/Scenes/MainGamePlay.unity"
             ]
@@ -391,6 +423,8 @@
             "moduleName": "Core",
             "usedInScenes": [
                 "Assets/Scenes/Ending1.unity",
+                "Assets/Scenes/Ending2.unity",
+                "Assets/Scenes/Ending3.unity",
                 "Assets/Scenes/Introduction.unity",
                 "Assets/Scenes/MainGamePlay.unity"
             ]
@@ -402,6 +436,8 @@
             "moduleName": "Core",
             "usedInScenes": [
                 "Assets/Scenes/Ending1.unity",
+                "Assets/Scenes/Ending2.unity",
+                "Assets/Scenes/Ending3.unity",
                 "Assets/Scenes/Introduction.unity",
                 "Assets/Scenes/MainGamePlay.unity"
             ]
@@ -413,6 +449,8 @@
             "moduleName": "Core",
             "usedInScenes": [
                 "Assets/Scenes/Ending1.unity",
+                "Assets/Scenes/Ending2.unity",
+                "Assets/Scenes/Ending3.unity",
                 "Assets/Scenes/Introduction.unity",
                 "Assets/Scenes/MainGamePlay.unity"
             ]
@@ -451,6 +489,8 @@
             "moduleName": "Core",
             "usedInScenes": [
                 "Assets/Scenes/Ending1.unity",
+                "Assets/Scenes/Ending2.unity",
+                "Assets/Scenes/Ending3.unity",
                 "Assets/Scenes/Introduction.unity",
                 "Assets/Scenes/MainGamePlay.unity"
             ]
@@ -462,6 +502,8 @@
             "moduleName": "Core",
             "usedInScenes": [
                 "Assets/Scenes/Ending1.unity",
+                "Assets/Scenes/Ending2.unity",
+                "Assets/Scenes/Ending3.unity",
                 "Assets/Scenes/Introduction.unity",
                 "Assets/Scenes/MainGamePlay.unity"
             ]
@@ -480,6 +522,8 @@
             "moduleName": "Core",
             "usedInScenes": [
                 "Assets/Scenes/Ending1.unity",
+                "Assets/Scenes/Ending2.unity",
+                "Assets/Scenes/Ending3.unity",
                 "Assets/Scenes/Introduction.unity",
                 "Assets/Scenes/MainGamePlay.unity"
             ]
@@ -507,6 +551,8 @@
             "moduleName": "Core",
             "usedInScenes": [
                 "Assets/Scenes/Ending1.unity",
+                "Assets/Scenes/Ending2.unity",
+                "Assets/Scenes/Ending3.unity",
                 "Assets/Scenes/Introduction.unity",
                 "Assets/Scenes/MainGamePlay.unity"
             ]
@@ -518,6 +564,8 @@
             "moduleName": "Core",
             "usedInScenes": [
                 "Assets/Scenes/Ending1.unity",
+                "Assets/Scenes/Ending2.unity",
+                "Assets/Scenes/Ending3.unity",
                 "Assets/Scenes/Introduction.unity",
                 "Assets/Scenes/MainGamePlay.unity"
             ]
@@ -529,6 +577,8 @@
             "moduleName": "Core",
             "usedInScenes": [
                 "Assets/Scenes/Ending1.unity",
+                "Assets/Scenes/Ending2.unity",
+                "Assets/Scenes/Ending3.unity",
                 "Assets/Scenes/Introduction.unity",
                 "Assets/Scenes/MainGamePlay.unity"
             ]
@@ -540,6 +590,8 @@
             "moduleName": "Core",
             "usedInScenes": [
                 "Assets/Scenes/Ending1.unity",
+                "Assets/Scenes/Ending2.unity",
+                "Assets/Scenes/Ending3.unity",
                 "Assets/Scenes/Introduction.unity",
                 "Assets/Scenes/MainGamePlay.unity"
             ]
@@ -551,6 +603,8 @@
             "moduleName": "Core",
             "usedInScenes": [
                 "Assets/Scenes/Ending1.unity",
+                "Assets/Scenes/Ending2.unity",
+                "Assets/Scenes/Ending3.unity",
                 "Assets/Scenes/Introduction.unity",
                 "Assets/Scenes/MainGamePlay.unity"
             ]
@@ -562,6 +616,8 @@
             "moduleName": "Core",
             "usedInScenes": [
                 "Assets/Scenes/Ending1.unity",
+                "Assets/Scenes/Ending2.unity",
+                "Assets/Scenes/Ending3.unity",
                 "Assets/Scenes/Introduction.unity",
                 "Assets/Scenes/MainGamePlay.unity"
             ]
@@ -573,6 +629,8 @@
             "moduleName": "Core",
             "usedInScenes": [
                 "Assets/Scenes/Ending1.unity",
+                "Assets/Scenes/Ending2.unity",
+                "Assets/Scenes/Ending3.unity",
                 "Assets/Scenes/Introduction.unity",
                 "Assets/Scenes/MainGamePlay.unity"
             ]
